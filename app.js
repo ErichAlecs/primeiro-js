@@ -26,7 +26,7 @@ console.log('Sua nota é ' + nota1)
 console.log(typeof nome) //Erich é uma string
 console.log(typeof idade) //Idade é um numero
 console.log(typeof fumante) //fumante é boolean (ou é verdadeiro ou falso)
-let veiculos = ['carro' , 'moto' , 'aviâo']
+let veiculos = ['carro', 'moto', 'aviâo']
 console.log(veiculos)
 console.log(typeof veiculos)
 
@@ -39,23 +39,45 @@ let cliente = {
 console.log(cliente)
 console.log(typeof cliente)
 
-let salvar = function ( ){
+let salvar = function () {
 
 }
 console.log(typeof salvar)
 
 // OPERADOS RELACIONAIS
-console.log(10>3) //maior
-console.log(5<3) //menor
-console.log(15>=10) // maior ou igual
-console.log(15<=10) //menor ou igual
+console.log(10 > 3) //maior
+console.log(5 < 3) //menor
+console.log(15 >= 10) // maior ou igual
+console.log(15 <= 10) //menor ou igual
 console.log(10 == 10) //igual
-console.log(10!= 10) //diferente
+console.log(10 != 10) //diferente
 
 //Operadores Logicos
 console.log('===========')
-console.log(10>3 && 10>15 ) //Operador E  - com o operador E (and) todas expressões devem ser verdadeira para o resultado ser verdadeiro
+console.log(10 > 3 && 10 > 15) //Operador E  - com o operador E (and) todas expressões devem ser verdadeira para o resultado ser verdadeiro
 
-console.log(10>3 || 10>5 || 10>8) //U I Operador OU(OR) - com o operador OU apenas uma expressão precisa ser verdadeira para o resultado ser verdadeiro
+console.log(10 > 3 || 10 > 5 || 10 > 8) //U I Operador OU(OR) - com o operador OU apenas uma expressão precisa ser verdadeira para o resultado ser verdadeiro
 
-console.log(!10>3) // Operador NÃO(NOT) - o operador NOT inverte o resultado da expressao, se fr verdadeiro ele inverte para falso e se for falso ele inverte para verdadeiro
+console.log(!10 > 3) // Operador NÃO(NOT) - o operador NOT inverte o resultado da expressao, se fr verdadeiro ele inverte para falso e se for falso ele inverte para verdadeiro
+
+//alert ('ola mundo')
+//document.write("<h1>Olá mundo</h1>")
+
+function Verde() {
+    //inserir um valor em um elemento da pagina
+    document.getElementById('titulo').innerHTML = 'Aula 02 de JS'
+    document.getElementById('texto').innerHTML = 'Vamos estudar interação com DOM'
+
+    document.body.style.backgroundColor = 'green'
+    document.body.style.color = 'white'
+    document.getElementById('texto').style.color = 'red'
+
+    //se quero pegar um valor de um elemento da pagina
+    let titulo = document.getElementById('titulo').innerHTML
+    console.log(titulo)
+}
+function Laranja(){
+    document.body.style.backgroundColor = 'orangered'
+    document.body.style.color = 'lightgreen'
+}
+
